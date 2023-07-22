@@ -8,7 +8,7 @@ export const routes = [
   {
     method: "GET",
     path: buildRoutePath("/tasks"),
-    handler: (req, res) => {
+    handler: (_req, res) => {
       const tasks = database.select('tasks')
       res
         .writeHead(200)

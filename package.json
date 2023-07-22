@@ -6,6 +6,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "node --watch src/server.js",
+    "upload": "node src/streams/csvParser.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/lucsmachado/tasks/issues"
   },
-  "homepage": "https://github.com/lucsmachado/tasks#readme"
+  "homepage": "https://github.com/lucsmachado/tasks#readme",
+  "dependencies": {
+    "csv-parse": "^5.4.0"
+  }
 }
